@@ -1,0 +1,51 @@
+body{
+    background-color: blanchedalmond;
+    }
+    .img{
+        width:1500px;
+        height: 680px;
+    }
+    
+    
+        .content {
+            background: rgba(255, 255, 255, 0.353);
+            color: indigo;
+        text-align: center;
+        MARGIN: 0 7.5%;
+        font-family: Trebuchet MS;
+    }
+    .content1 {
+        background: rgba(255, 255, 255, 0.353);
+        color: indigo;
+    text-align: left;
+    MARGIN: 0 7.5%;
+    font-family: Trebuchet MS;
+    }
+    #title{
+        font-size:xx-large;
+    }
+    .hemlo{
+        text-align: center;
+        background-color: darkgray;
+        
+    
+    }
+    #iframe1{
+        margin-left: 475px;
+        margin-right: 100px;
+    }
+    #cont1 {
+        height: 3em;
+    
+    
+        background: rgba(255, 255, 255, 0.353);
+        font-family:Trebuchet MS;
+        width: 99%;
+        text-align: right;
+        
+    }
+    #content3{
+      margin-left: 2em;
+      margin-right: 2em;
+      color: indigo;
+    }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function allowDrop(ev) {
+              ev.preventDefault();
+            }
+            
+            function drag(ev) {
+              ev.dataTransfer.setData("text", ev.target.id);
+            }
+            
+            function drop(ev) {
+              ev.preventDefault();
+              var data = ev.dataTransfer.getData("text");
+              ev.target.appendChild(document.getElementById(data));
+            }
+
+
+            function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Number Of Likes " + localStorage.clickcount + " .";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+            </script>
+    </head>
+    <body>
+        <img class="img" src="IMG_7052.png" alt="">
+        <div class="content">
+            <h1 id="title">
+                KAHALGAON 
+            </h1>
+            <h3>
+                (MY HOMETOWN)
+            </h3>
+            <p>
+                Kahalgaon (formerly known as Colgong during British rule) is a town and a municipality in Bhagalpur district in the state of Bihar, India. It is located close to the Vikramashila, that was once a famous centre of Buddhist learning across the world, along with Nalanda during the Pala dynasty. The Kahalgaon Super Thermal Power Plant (KhSTPP) is located near the town(3 km).<br>
+                <br>
+                Kahalgaon Super Thermal Power Station (KhSTPP)is located in Kahalgaon in Bhagalpur district of Bihar. The power plant is one of the coal based power plants of NTPC. The coal for the power plant is sourced from Rajmahal coalfield of Eastern Coalfields Limited. Source of water for the power plant is Ganga River.<br><br>
+                <a id="content3" href="kahalgaon.html">MORE ABOUT KAHALGAON</a>
+            </p>
+            <iframe id="iframe1" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14435.94562808803!2d87.267299!3d25.2373828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x89e036f8e0f856a4!2sNTPC%20Kahalgaon%20Power%20Station!5e0!3m2!1sen!2suk!4v1649339605950!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="con1">
+        <h2>
+            NTPC TOWNSHIP
+        </h2>
+        <p>
+            <img class="townimg" src="SNAP-20210722-180539.jpg" height="300px" width="600px"><BR>
+         <a class="content4" href="lake.html">       
+            <em>NTPC POND</em></a>    
+        
+        <div class="hide">LINK TO MAP</div></p><br></div>
+        <div class="con1">
+        <p>
+            <img class="townimg" src="IMG_20190126_112845.jpg" height="350px" width="600px"><BR>
+         <a class="content4" href="stadium.html">       
+        <em>NTPC STADIUM</em></a>        
+        
+        
+        <div class="hide">LINK TO MAP</div></p><br></div>
+        <div class="con1">
+        <p>
+            <img class="townimg" src="SNAP-20210901-180001.jpg" height="300px" width="600px"><BR>           
+        
+        </div></p>
+        <div class="con1">
+            <img class="townimg" src="AC37DEE6CD863B14FBE0D1D0369DFE85.jpg" height="400px" width="600px"><BR>
+        </div>
+        <div class="content">
+        <h3 style="text-align:center">
+            <a class="content4" href="images.html">       
+                <em>CLICK HERE FOR MORE IMAGES OF KAHALGAON</em></a>
+        </h3></div><div class="content">
+            <H2>RIVER GANGES AND THE TEMPLE IN THE MIDDLE OF IT</H2><BR><BR>
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="712" height="400" type="text/html" src="https://www.youtube.com/embed/lXi4nnV41vA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/nl/">youtubeembedcode nl</a></small></div><div><small><a href="https://axelsonsspa.se/lymfmassage/">lymfmassage stockholm</a></small></div><div><small><a href="https://youtubeembedcode.com/pl/">youtubeembedcode.com/pl/</a></small></div><div><small><a href="https://axelsonsspa.se/odengatan/">spa i stockholm</a></small></div><div><small><a href="https://youtubeembedcode.com/es/">youtubeembedcode.com/es/</a></small></div><div><small><a href="https://casinoutanspelpauslicens.se/">https://casinoutanspelpauslicens.se/</a></small></div></iframe>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="content">
+        <h2 style="text-align: center;" style="color: indigo;" >
+            DRAG AND DROP A PHOTO YOU LIKE
+        </h2></div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br>
+
+        <img id="drag1" src="IMG_20180912_173302642_HDR-01.jpeg" draggable="true" ondragstart="drag(event)" width="336" height="200">
+        <img id="drag2" src="IMG_8485.JPG" draggable="true" ondragstart="drag(event)" width="336" height="200">
+        <img id="drag3" src="AC37DEE6CD863B14FBE0D1D0369DFE85.jpg" draggable="true" ondragstart="drag(event)" width="336" height="200">   
+        <img id="drag4" src="SNAP-20210713-184006.jpg" draggable="true" ondragstart="drag(event)" width="336" height="200">
+        <BR><BR><BR><BR><BR><BR>
+        <div class="content">
+            <H2>
+                Click here if u liked the website
+            </H2>
+        <p><button onclick="clickCounter()" type="button">CLICK HERE</button></p>
+        <div id="result"></div></div><BR><BR><BR><BR><BR><BR>
+        <div class="content">
+            <h2>
+                WEBSITE DESIGNED BY - <a href="resume.html">Ramesh Chandra Bhanu</a>
+            </h2>
+        </div>
+
+
+
+    </body>
+</html>                                          
